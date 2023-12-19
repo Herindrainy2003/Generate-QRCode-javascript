@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generer un QRCode</title>
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="link" placeholder="Entrez le lien..." onchange="generateur()">
+        <div class="qr_code"></div>
+    </div>
+    
+
+    <style>
+        /* Réinitialisation des marges et des rembourrages */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style pour le conteneur principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(42, 42, 57);
+}
+
+/* Style pour le champ de saisie */
+#link {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    width: 300px;
+    background-color: rgb(38, 148, 245);
+}
+    </style>
+  
+  <script src="qrcode.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
